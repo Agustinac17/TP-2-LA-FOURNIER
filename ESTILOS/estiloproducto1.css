@@ -5,126 +5,125 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #e9ddbd;
-}
-h1 {
-    color: rgb(94, 84, 69);
-    font-family: fantasy;
-    font-size: 25px;
-    text-align: center;
-    text-decoration: none;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: #f8f8f8;
+    color: #333;
+    background-image: url('../IMAGENES/fondonashe.jpeg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
-h2 {
-    color: rgb(80, 67, 48);
-    font-family: sans-serif;
-    font-size: 25px;
-    text-align: center;
-    text-decoration: none;
-}
-
-p {
-    color: rgb(63, 59, 41);
-    font-family:fantasy;
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    transition: color 0.3s ease;
-}
-
-a:link, a:visited {
-    color: rgb(0, 0, 0);
-}
-
-a:active {
-    color: rgb(116, 93, 64);
-}
-
-/* Header Styles */
+/* HEADER */
 header {
-    width: 100%;
+    background-color: #000000;
+    padding: 10px 0;
     text-align: center;
-    background-color: rgb(0, 0, 0);
 }
 
 header img {
-    width: 20%;
+    max-width: 100%;
     height: auto;
 }
 
-/* MI NAV*/
-nav {
-    width: 100%;
-    float: left;
-    font-family: fantasy;
-    background-color: rgb(194, 144, 88);
-    padding: 10px;
-}
-
+/* MENU */
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: rgb(201, 154, 100);
-    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
 }
 
 nav ul li {
-    float: left;
-    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    color: #d8bd94;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color:  rgb(214, 175, 131);
+    color: #ff5722;
 }
 
-/* MI MENU */
-.menu_chiquito {
-    width: 15%;
+/* KANGREBURGUER */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
 }
 
-.maxmenu {
-    width: 35%;
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px;
+    transition: all 0.3s ease;
 }
 
-li:hover {
-    background-color: rgb(219, 193, 121);
-    color: rgb(0, 0, 0);
+/* CELU Y TABLET*/
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        background-color: #ffffff;
+        border-top: 1px solid #f0e0ad;
+        z-index: 1;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
 }
 
-
-/* Footer */
-footer {
-    background-color: #b8a17e; 
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
-}
-
-.eslogan {
-    color: rgb(68, 53, 34); 
-    text-align: center; 
-    padding: 10px 0; 
-    position: fixed;
-    width: 100%; 
-    bottom: 0;
-    font-size: 14px;
-    font-family: fantasy; 
-}
 
 /*--------------------------------*/
+/* TITULOS */
+h1 {
+    background-color: #806a4ecb;
+    color: #f9f9f9;
+    font-weight: lighter;
+    padding: 20px;
+    border-bottom: solid #f9f9f9;
+}
+
+h2 {
+    font-size: 24px;
+    color: #75624c;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
 .product-details {
     display: flex;
     gap: 20px;
@@ -168,3 +167,16 @@ footer {
     transform: translateY(-2px);
 }
 
+/* Footer */
+footer {
+    background-color: #806a4e;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    color:#f8f8f8;
+}
