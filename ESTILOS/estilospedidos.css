@@ -67,6 +67,20 @@ nav ul li a:hover {
 
 /* CELU Y TABLET*/
 @media (max-width: 768px) {
+    header img {
+        max-width: 200px;
+        height: auto;
+        width: full;
+    }
+
+    header {
+        height: 80px;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
     nav ul {
         display: none;
         flex-direction: column;
@@ -85,7 +99,6 @@ nav ul li a:hover {
 
     .hamburger {
         display: flex;
-        position: absolute;
         right: 20px;
         top: 20px;
     }
