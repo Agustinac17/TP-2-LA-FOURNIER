@@ -131,7 +131,6 @@ h1 {
 }
 
 /*--------------------------------*/
-
 .productos_box {
     display: flex;
     flex-wrap: wrap;
@@ -140,20 +139,18 @@ h1 {
 }
 
 .producto {
-    border: 1px solid #9e8f72;
+    border: 1px solid #ccc;
     background-color: rgb(255, 254, 246);
     margin: 10px;
     padding: 10px;
-    width: 500%;
-    text-align:justify;
+    width: 200px;
+    text-align: center;
     transition: transform 0.3s;
-    border-radius: 8px;
 }
 
 .producto img {
-    width: 300px;
-    height: 300px;
-    border-radius: 8px;
+    width: 100%;
+    height: auto;
 }
 
 .producto:hover {
@@ -169,6 +166,7 @@ h1 {
     text-align: center;
 }
 
+
 /* TITULOS */
 .producto h2 {
     font-size:medium;
@@ -183,38 +181,6 @@ h1 {
     font-weight: bold;
 }
 
-/* Estilos del carrusel */
-.carrusel {
-    position: relative;
-    width: 90%;
-    margin: 20px auto; 
-    overflow: hidden; 
-    border-radius: 8px; 
-}
-
-.carrusel-contenedor {
-    display: flex;
-    transition: transform 0.5s ease; 
-}
-
-.carrusel-boton {
-    position: absolute;
-    top: 50%; 
-    transform: translateY(-50%);
-    background-color: rgba(151, 124, 99, 0.7); 
-    border: none; 
-    cursor: pointer; 
-    padding: 10px; 
-    border-radius: 40%; 
-}
-
-.carrusel-boton.anterior {
-    left: 10px; 
-}
-
-.carrusel-boton.siguiente {
-    right: 10px;
-}
 
 /* Footer */
 footer {
