@@ -25,5 +25,7 @@ form.addEventListener('submit', function(event) {
         };
         reader.readAsDataURL(file); // Lee el archivo como URL de datos
         fileInput.value = ''; // Limpia el input
+    } else {
+        alert('Por favor, selecciona un archivo para subir.');
     }
 });

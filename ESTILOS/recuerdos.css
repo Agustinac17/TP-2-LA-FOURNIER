@@ -118,21 +118,51 @@ nav ul li a:hover {
 
 /*--------------------------------*/
 
-#upload-form {
-    margin: 20px 0;
+/* Estilo del contenedor principal */
+main {
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 50px; /* Centramos el formulario */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-#photo-wall {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+/* Estilo del título */
+h2 {
+    text-align: center; /* Centra el texto */
+    color: #333; /* Color del texto */
 }
 
-.uploaded-image {
-    width: 150px; /* Ajusta el tamaño de las imágenes */
-    height: auto;
-    border: 2px solid #ccc;
-    border-radius: 5px;
+/* Estilo del formulario */
+form {
+    display: flex; /* Usar flexbox para alinear elementos */
+    flex-direction: column; /* Colocar elementos en columna */
+}
+
+/* Estilo de la entrada de archivo */
+input[type="file"] {
+    margin: 20px 0; /* Espaciado vertical */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Fondo claro */
+}
+
+/* Estilo del botón */
+button {
+    padding: 10px; /* Espaciado interno */
+    background-color: #5cb85c; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Estilo del botón al pasar el mouse */
+button:hover {
+    background-color: #4cae4c; /* Color más oscuro al pasar el mouse */
 }
 
 /*******************************************************/

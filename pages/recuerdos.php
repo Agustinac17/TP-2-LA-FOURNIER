@@ -1,8 +1,3 @@
-<?php
-include('conexion.php');
-conectar();
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -34,7 +29,7 @@ conectar();
 
     <main>
         <h2>Subí tu recuerdo</h2>
-        <form id="upload-form" action="cargamuro.php" method="POST" enctype="multipart/form-data">
+        <form id="upload-form" action="php/cargamuro.php" method="POST" enctype="multipart/form-data">
             <input type="file" id="file-input" name="image" accept="image/*" required>
             <button type="submit">Subir</button>
         </form>
@@ -48,10 +43,10 @@ conectar();
             foreach ($images as $image) {
                 echo '<img src="' . $image . '" class="uploaded-image" alt="Recuerdo" style="width: 100px; height: auto; margin: 5px;">';
             }
-            
+           ?> 
         </div>
     </main>
     
-    <script src="../JS/index.js"></script>
+    <script src="../JS/recuerdos.js"></script>
 </body>
 </html>

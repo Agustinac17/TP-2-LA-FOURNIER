@@ -2,7 +2,7 @@
 function conectar()
 {
 	global $con;
-	$con = mysqli_connect("localhost","root","root","guiaphp");
+	$con = mysqli_connect("localhost","root","root","lafournier_bd");
 		/* comprobar la conexión */
 		if (mysqli_connect_errno()) 
 		{
@@ -22,4 +22,4 @@ function desconectar()
 	global $con;
 	mysqli_close($con);
 }
-?>;
+?>
