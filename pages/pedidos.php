@@ -30,38 +30,49 @@
     <h1>HACE TU PEDIDO</h1>
 
     <main>
-        <form action="procesar_compra.php" method="POST">
-            <div>
-                <label for="nombre">Nombre del Cliente:</label>
-                <input type="text" id="nombre" name="nombre" required>
-            </div>
-            <div>
-                <label for="direccion">Dirección:</label>
-                <input type="text" id="direccion" name="direccion" required>
-            </div>
-            <div>
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-            </div>
-            <div>
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div>
-                <label for="pago">Medio de Pago:</label>
-                <select id="pago" name="pago">
-                    <option value="tarjeta">Tarjeta de Crédito</option>
-                    <option value="mercado pago">Mercado Pago</option>
-                    <option value="transferencia">Transferencia</option>
-                </select>
-            </div>
-            <div>
-                <label for="productos">Productos:</label>
-                <textarea id="productos" name="productos" rows="4" readonly></textarea>
-            </div>
-            <button type="submit">Completar Compra</button>
-        </form>
-    </main>
+    <form action="procesar_compra.php" method="POST">
+        <div>
+            <label for="nombre">Nombre del Cliente:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingrese su nombre">
+        </div>
+        <div>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required placeholder="Ingrese su dirección">
+        </div>
+        <div>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required placeholder="Ingrese su número de teléfono">
+        </div>
+        <div>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingrese su e-mail">
+        </div>
+        <div>
+            <label for="pago">Medio de Pago:</label>
+            <select id="pago" name="pago" required>
+                <option value="tarjeta">Tarjeta de Crédito</option>
+                <option value="mercado_pago">Mercado Pago</option>
+                <option value="transferencia">Transferencia</option>
+            </select>
+        </div>
+        <div>
+            <label for="productos">Productos:</label>
+            <textarea id="productos" name="productos" rows="4" placeholder="Ingrese los productos deseados" required></textarea>
+        </div>
+        <div>
+            <label for="fecha_entrega">Fecha de Entrega:</label>
+            <input type="date" id="fecha_entrega" name="fecha_entrega" required>
+        </div>
+        <div>
+            <label for="horario_entrega">Horario de Entrega:</label>
+            <input type="time" id="horario_entrega" name="horario_entrega" required>
+        </div>
+        <div>
+            <label for="notas">Notas Adicionales:</label>
+            <textarea id="notas" name="notas" rows="3" placeholder="Ingrese cualquier nota adicional"></textarea>
+        </div>
+        <button type="submit">Completar Compra</button>
+    </form>
 
     <footer class="eslogan">
         ¿Dulce o Salado?

@@ -84,27 +84,28 @@
 
     <section class="formulario">
         <h1>Solicita un Evento</h1>
-        <form id="event-request-form">
+        <form id="event-request-form" action="funcionesphp/capdatos.php" method="POST">
             <label for="event-name">Nombre del Evento:</label>
-            <input type="text" id="event-name" name="event-name" required>
+            <input type="text" id="event-name" name="event_name" required>
 
             <label for="contact-name">Nombre de Contacto:</label>
-            <input type="text" id="contact-name" name="contact-name" required placeholder="Ingrese su nombre">
+            <input type="text" id="contact-name" name="contact_name" required placeholder="Ingrese su nombre">
 
             <label for="contact-number">Número de Contacto:</label>
-            <input type="tel" id="contact-number" name="contact-number" required placeholder="Ingrese su número de contacto">
+            <input type="tel" id="contact-number" name="contact_number" required placeholder="Ingrese su número de contacto">
 
             <label for="event-date">Fecha del Evento:</label>
-            <input type="text" id="event-date" name="event-date" required class="flatpickr">
+            <input type="date" id="event-date" name="event_date" required>
 
             <label for="event-time">Horario:</label>
-            <input type="time" id="event-time" name="event-time" required>
+            <input type="time" id="event-time" name="event_time" required>
 
             <label for="event-location">Ubicación:</label>
-            <input type="text" id="event-location" name="event-location" required placeholder="Ingrese la ubicación">
+            <input type="text" id="event-location" name="event_location" required placeholder="Ingrese la ubicación">
 
             <button type="submit">Enviar Solicitud</button>
         </form>
+
     </section>
 
     <!-- FOOTER -->

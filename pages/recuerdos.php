@@ -45,6 +45,18 @@
             }
            ?> 
         </div>
+        <!--
+        include('conexion.php');
+        $con = conectar();
+
+        $query = "SELECT image_path FROM recuerdos";
+        $result = $con->query($query);
+
+        while ($row = $result->fetch_assoc()) {
+            echo '<img src="' . $row['image_path'] . '" class="uploaded-image" alt="Recuerdo" style="width: 100px; height: auto; margin: 5px;">';
+        }
+
+        $con->close();-->
     </main>
     
     <script src="../JS/recuerdos.js"></script>
